@@ -7,13 +7,13 @@ keys:
     - ~/.ssh/id_rsa
 folders:
     -
-        map: /Users/gpspake/code/wordpress-homestead
+        map: ./
         to: /home/vagrant/Code
 sites:
     -
-        map: homestead.app
-        to: /home/vagrant/Code/Laravel/public
+        map: wordpress.app
+        to: /home/vagrant/Code/wordpress/
 databases:
     - homestead
-name: wordpress-homestead
-hostname: wordpress-homestead
+name: wordpress
+hostname: wordpress
