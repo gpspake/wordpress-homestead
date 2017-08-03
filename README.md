@@ -1,6 +1,6 @@
 # WordPress Homestead
 
-Local WordPress development with Homestead
+Local WordPress development with [Homestead](https://github.com/laravel/homestead)
 
 ## Getting Started
 
@@ -31,4 +31,15 @@ vagrant up
 
 Go to `wordpress.app` in a browser
 
-The username and password for wp-admin and the wordpress database is `homestead / secret`.
+The username and password for wp-admin and the database is `homestead / secret`.
+
+SSH access
+````bash
+vagrant ssh
+````
+
+Use [WP-CLI](http://wp-cli.org/) to manage WordPress in homestead
+````bash
+cd Code/wordpress
+wp
+````
