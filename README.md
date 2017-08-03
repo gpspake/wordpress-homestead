@@ -40,6 +40,15 @@ vagrant ssh
 
 Use [WP-CLI](http://wp-cli.org/) to manage WordPress in homestead
 ````bash
-cd Code/wordpress
+cd ~/Code/wordpress
 wp
+````
+
+Symlink Project Files in to WordPress
+
+Use symlinks to work on plugins and themes from your project directory
+````bash
+cd ~/Code
+mkdir my-plugin
+ln -s ~/Code/my-plugin ~/Code/wordpress/wp-content/plugins/my-plugin
 ````
